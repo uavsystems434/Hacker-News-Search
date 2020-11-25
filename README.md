@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Hacker News Search App
+Created by [Justin Lawhorne](https://github.com/uavsystems434)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](/public/app_record.gif)
+# Function :iphone:
+Let's the user search Hacker News articles by using the [HN Search API](https://hn.algolia.com/api). Results are then returned to the user that are relevant to the search query.
 
-## Available Scripts
+# Installation :arrow_down:
+1.	Clone the repo [here]() :link:
+2.	Open  the files in your code editor of choice and navigate  to the Terminal window.
+3.	Navigate to the file's directory by using ```cd hacker-news-search```.
+3.	Once you have entered the directory, run the following commands:
+4.	```npm install``` to install the dependencies. 
+5.	```npm start``` to open the project in the browser.
+5.	This will create a local host connection in the [browser](http://locahost:3000).
+6.	The Hacker News Search App should now be visible!:tada:
 
-In the project directory, you can run:
+# Description :memo:
+* I used [create-react-app](https://github.com/facebook/create-react-app) to setup necessary files.
+* Utilized [redux-thunk](https://github.com/reduxjs/redux-thunk) middleware to make asynchronous calls by allowing the action creator to return functions instead of an action. 
+* Referenced [axios](https://github.com/axios/axios) to make AJAX calls to the HN Search API based on the user's search terms and displays the results accordingly.
+* The technologies used for this project are HTML, CSS, [React](https://reactjs.org/docs/getting-started.html), and [Redux](https://redux.js.org/).
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This compact application lets you search  Hacker News by querying the Hacker News Algolia API. It then displays relevant results based on the search term(s). You can click on any article posted on Hacker News. The input received is stored in the Redux store, a powerful state management tool that is compatible with React. Once a new search query has been submitted, the displayed results are only relevant to the current search query. I decided to add a clear function to the input value after each form submission to prevent the issue of having to manually remove the current search query before inputting a new search value. I have also added minimal component CSS styling for accessibility to most devices.

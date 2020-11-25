@@ -1,0 +1,51 @@
+/* styles specific to the SearchResults.js file */
+.result-block {
+    position: relative;
+    top: 4rem;
+    height: 5rem;
+    margin: 0 auto;
+    left: .5rem;
+}
+
+.result-text {
+    color: rgb(50, 110, 60);
+    font-size: 1.4rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.result-title {
+    font-weight: bold;
+    position: relative;
+    margin: 0 auto;
+    text-decoration: underline;
+}
+
+.text-header {
+    text-align: center;
+    margin: 0 auto; 
+    position: relative;
+    top: 2.5rem;
+    text-decoration: underline;
+}
+
+.no__result--undefined p {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+@media (min-width: 100px) and (max-width: 800px) {
+    .result-text {
+    color: rgb(50, 110, 60);
+    font-size: 1rem;
+    }            
+
+}
+
+@media (min-width: 50px) and (max-width: 300px) {
+    .result-text {
+    color: rgb(50, 110, 60);
+    font-size: .75rem;
+    }
+}

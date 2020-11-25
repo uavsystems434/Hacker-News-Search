@@ -1,13 +1,31 @@
+/* styles for the app as a whole */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, rgba(179,179,179,1) 0%, rgba(214,206,206,1) 95%, rgba(189, 0, 0, 0.233) 100%);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  height: 1850px;
+  position: inherit;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
+}
+
+h1 {
+  position: relative;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  top: 4rem;
 }

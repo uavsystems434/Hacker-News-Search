@@ -1,0 +1,72 @@
+/* styles specific to the SearchBar.js file */
+h1 {
+    background: linear-gradient(0deg, rgba(210,207,207,1) 0%,
+    rgba(124,124,124,1) 10%, rgba(0,0,0,1) 90%);
+    border-radius: 10rem;
+    width: 40%;
+    padding: 1.2rem 0 1.2rem 0;
+    color: red;
+    text-align: center;
+    position: relative;
+}
+
+.title-ref {
+    text-decoration: none;
+}
+
+.search-input {
+    background-color: rgba(90, 90, 90, 0.924);
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: .75rem;
+    height: 1.5em;
+    font-size: 1.5rem;
+    color:white;
+}
+
+.search__home-container {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    top: 1.15rem;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: .75rem;
+    text-decoration: none;
+    }
+
+.form-inline ::placeholder {
+    color: white;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 800px) {
+  h1 {
+     background: linear-gradient(0deg, rgba(210,207,207,1) 0%, rgba(124,124,124,1) 10%
+     rgba(0,0,0,1) 90%);
+    border-radius: 10rem;
+    width: 72%;
+    padding: 1.2rem 0 1.2rem 0;
+    color: red;
+    z-index: 5;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    }
+
+}
+
+@media (min-width: 50px) and (max-width: 199px)  {
+ h1 {
+    background: linear-gradient(0deg, rgba(210,207,207,1) 0%, rgba(124,124,124,1) 10%, rgba(0,0,0,1) 90%);
+    border-radius: 10rem;
+    width: 70%;
+    padding: 1.2rem 0 1.2rem 0;
+    color: red;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    }
+
+}
