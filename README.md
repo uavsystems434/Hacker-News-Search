@@ -6,7 +6,7 @@ Created by [Justin Lawhorne](https://github.com/uavsystems434)
 Let's the user search Hacker News articles by using the [HN Search API](https://hn.algolia.com/api). Results are then returned to the user that are relevant to the search query.
 
 # Installation :arrow_down:
-1.	Clone the repo [here]() :link:
+1.	Clone the repo [here](https://github.com/uavsystems434/Hacker-News-Search.git) :link:
 2.	Open  the files in your code editor of choice and navigate  to the Terminal window.
 3.	Navigate to the file's directory by using ```cd hacker-news-search```.
 3.	Once you have entered the directory, run the following commands:
