@@ -14,9 +14,9 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "semver": "^7.3.2",
-     "engines": {
-    "npm": "5.7.1",
-    "node": "9.5.0" }
+    "npm":"^5.7.1",
+    "node": "^9.5.0"
+
   },
   "scripts": {
     "start": "react-scripts start",
