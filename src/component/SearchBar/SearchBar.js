@@ -23,7 +23,6 @@ handleFormSubmit = (e) => {
     console.log(this.state.currentSearchInput);
     this.props.search(this.state.currentSearchInput);
     this.props.getResults(this.state.currentSearchInput);
-    document.getElementById('text-submit').value = null;
 }
 
     render() {
@@ -32,7 +31,7 @@ handleFormSubmit = (e) => {
                 <a href="/" className="title-ref"><h1>Hacker News Search</h1></a>  
             <div>
                 <form className="form-inline" onSubmit={this.handleFormSubmit}>
-                    <input id="text-submit" className="search-input" type="search" 
+                    <input className="search-input" type="search" 
                     onChange={this.handleInput} placeholder="Search Hacker News Articles" aria-label="Search">
                     </input>
                </form>
