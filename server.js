@@ -1,10 +1,11 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const PORT = process.env.PORT || 8080;
+app.use(express.static(path.join(__dirname, 'build')));
 
-app.set( 'port', ( process.env.PORT || 8080 ));
+app.get('/src', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
-// Start node server
-app.listen( app.get( 'port' ), function() {
-  console.log( 'Node server is running on port ' + app.get( 'port' ));
-  });
+app.listen(PORT);
