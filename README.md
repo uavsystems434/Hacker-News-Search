@@ -1,6 +1,6 @@
 # Hacker News Search App
 Created by [Justin Lawhorne](https://github.com/uavsystems434)
-
+Deployed [App](https://hacker-news-app.herokuapp.com/) on Heroku
 ![](/public/app_record.gif)
 # Function :iphone:
 Let's the user search Hacker News articles by using the [HN Search API](https://hn.algolia.com/api). Results are then returned to the user that are relevant to the search query.
