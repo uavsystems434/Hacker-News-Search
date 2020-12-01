@@ -11,35 +11,33 @@ class Searchresults extends Component {
             return (
                 <p className="no__result-undefined">There are currently no results to display</p>
             )
-        }   else 
-
-        {
+        }   
+        else {
             const { results }= this.props;
-     
                 return (
             <div>
                 <h2 className="text-header">Search Results</h2>
                 {results.map(result => {
                 return(      
                     <div className="result-block">
-                    <a href={result.url} className="result-text" key={result.objectID}><strong className="result-title">{result.title}</strong><br></br><strong>Author: </strong>{result.author}</a>
+                    <a href={result.url} className="result-text" key={result.objectID}><strong className="result-title">{result.title}</strong><br></br>
+                    <strong>Author: </strong>{result.author}</a>
                     </div>
-
                 )}
                 )}
-            </div>
-                
-            )
-        }
+            </div>   
+                )
+            }
+            
     }
-
       render() {
         return(
             <div>
                 {this.handleSearchInfo()}
             </div>
         )
-    }
+      }
+
 }
 
 const mapStateToProps = (state) => {
